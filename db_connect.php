@@ -1,5 +1,7 @@
 <?php
-$conn = new mysql("localhost", "test_user", "password123", "test_db");
+
+
+$conn = new mysqli("localhost", "test_user", "password123", "test_db");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
