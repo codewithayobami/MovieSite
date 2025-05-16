@@ -1,0 +1,718 @@
+body{
+        
+    background: black;
+    color: white;
+
+}
+.con__tent {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+color: white;
+/* margin-top: 7rem; */
+flex-wrap: wrap;
+}
+.con__tent h1 {
+font-size: 55px;
+margin-bottom: 1rem;
+text-align: center;
+}
+.con__tent h4 {
+font-size: 25px;
+margin-bottom: 1rem;
+}
+.con__tent h3 {
+font-size: 20px;
+margin-bottom: 1rem;
+text-align: center;
+}
+.mail__wrapper {
+display: flex;
+align-items: center;
+gap: 2rem;
+flex-wrap: wrap;
+justify-content: center;
+}
+.Mail__address {
+border: 1px solid gray;
+margin-top: 10px;
+}
+.Mail__address input {
+width: 450px;
+height: 45px;
+border: none;
+padding: 8px;
+background: transparent;
+border-radius: 0.25rem;
+position: relative;
+}
+.Mail__address input::placeholder {
+color: white;
+font: 20px;
+transition: all 1s ease-in;
+}
+.Mail__address input:focus::placeholder {
+color: rgba(255, 0, 0, 0.589);
+transition: all 1s ease-in-out;
+position: absolute;
+margin-top: -15px;
+}
+.__btn button {
+padding: 12px 24px;
+color: white;
+background-color: red;
+font-size: 20px;
+border-radius: 0.25rem;
+margin-top: 10px;
+border: none;
+}
+.sectiontwo {
+width: 100%;
+height: 100vh;
+padding: 0 10rem;
+background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.952));
+}
+.second_sec {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.con_tent_wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+@media (min-width:320px) and (max-width:767px) {
+.header {
+padding: 0 2rem;
+}
+.navbar {
+padding: 0 .5rem;
+margin-top: 1rem;
+}
+.nexflixLogo{
+width: 8rem;
+height: 1.7rem;
+color: rgb(229,9,20);
+fill: currentColor;
+display: block;
+}
+.con__tent h1 {
+font-size: 35px;
+margin-bottom: 1rem;
+text-align: center;
+}
+.con__tent h4 {
+font-size: 15px;
+margin-bottom: 1rem;
+}
+.con__tent h3 {
+font-size: 10px;
+margin-bottom: 1rem;
+text-align: center;
+}
+.Mail__address {
+border: 1px solid gray;
+border-radius: 0.25rem;
+margin-top: 10px;
+}
+.Mail__address input {
+width: 350px;
+height: 60px;
+border: none;
+padding: 8px;
+background: transparent;
+color: red;
+border-radius: 0.25rem;
+position: relative;
+}
+.__btn button {
+padding: 10px;
+color: white;
+background-color: red;
+font-size: 20px;
+border-radius: 0.25rem;
+margin-top: 10px;
+}
+.second_sec {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.con_tent_wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 3rem;
+}
+.first_conn h1 {
+font-size: 30px;
+margin-bottom: 2rem;
+}
+.first_conn h3 {
+font-size: 30px;
+}
+.sectiontwo {
+width: 100%;
+height: 100vh;
+padding: 0 5rem;
+background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.952));
+}
+}
+
+
+
+@media (min-width:320px) {
+.header {
+padding: 0 5rem;
+}
+.navbar {
+padding: 0 5rem;
+}
+.con__tent h1 {
+font-size: 25px;
+margin-bottom: 1rem;
+text-align: center;
+}
+.con__tent h4 {
+font-size: 15px;
+margin-bottom: 1rem;
+text-align: center;
+}
+.con__tent h3 {
+font-size: 10px;
+margin-bottom: 1rem;
+}
+.Mail__address {
+border: 1px solid gray;
+border-radius: 10px;
+margin-top: 10px;
+}
+.Mail__address input {
+width: 240px;
+height: 40px;
+border: none;
+padding: 8px;
+background: transparent;
+color: red;
+border-radius: 0.25rem;
+position: relative;
+}
+.Mail__address input:focus::placeholder {
+color: rgba(255, 0, 0, 0.589);
+transition: all 1s ease-in-out;
+position: absolute;
+margin-top: -12px;
+}
+.__btn button {
+padding: 5px;
+color: white;
+background-color: red;
+font-size: 15px;
+border-radius: 0.25rem;
+margin-top: 0px;
+}
+.second_sec {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.first_conn h1 {
+font-size: 28px;
+text-align: center;
+margin-bottom: .7rem;
+}
+.first_conn h3 {
+font-size: 17px;
+font-weight: 500;
+}
+.sectiontwo {
+width: 100%;
+height: 100vh;
+padding: 0 2rem;
+background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.952));
+}
+}
+
+@media (min-width:375px) {
+.first_conn h1 {
+font-size: 26.5px;
+text-align: center;
+margin-bottom: .5rem;
+}
+.first_conn h3 {
+font-size: 17px;
+}
+.navbar {
+padding: 0 5rem;
+}
+.sectiontwo {
+width: 100%;
+height: 100vh;
+padding: 0 1rem;
+background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.952));
+}
+.__btn button {
+padding: 10px;
+color: white;
+background-color: red;
+font-size: 20px;
+border-radius: 0.25rem;
+margin-top: 10px;
+}
+}
+
+@media (min-width:425px) {
+.first_conn h1 {
+font-size: 26.5px;
+text-align: center;
+margin-bottom: .7rem;
+}
+.first_conn h3 {
+font-size: 18px;
+font-weight: 400;
+}
+.sectiontwo {
+width: 100%;
+height: 100vh;
+padding: 0 1rem;
+background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.952));
+}
+.__btn button {
+padding: 10px;
+color: white;
+background-color: red;
+font-size: 20px;
+border-radius: 0.25rem;
+margin-top: 10px;
+}
+}
+
+@media (max-width:768px) {
+.first_conn h1 {
+font-size: 26.5px;
+text-align: center;
+margin-top: 20%;
+}
+.navbar {
+padding: 2rem;
+margin-top: 1rem;
+}
+.first_conn h3 {
+font-size: 15px;
+text-align: center;
+font-weight: 400;
+}
+.sectiontwo {
+width: 100%;
+height: 100vh;
+padding: 0 1rem;
+background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.952));
+}
+.con_tent_wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 2rem;
+}
+.__btn button {
+padding: 10px;
+color: white;
+background-color: red;
+font-size: 20px;
+border-radius: 0.25rem;
+margin-top: 10px;
+}
+}
+@media (min-width:1024px) and (max-width:2560px) {
+.Mail__address input {
+width: 450px;
+height: 45px;
+border: none;
+padding: 8px;
+background: transparent;
+border-radius: 0.25rem;
+position: relative;
+}
+.first_conn h1 {
+display: flex;
+font-size: 45px;
+margin-bottom: .6rem;
+}
+.first_conn h3 {
+font-size: 23px;
+width: 450px;
+font-weight: 400;
+}
+.con_tent_wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+padding: 20px;
+}
+.con__tent h1 {
+font-size: 50px;
+margin-bottom: 2rem;
+text-align: center;
+}
+.con__tent h4 {
+font-size: 27px;
+margin-bottom: 2rem;
+}
+.con__tent h3 {
+font-size: 20px;
+margin-bottom: 2rem;
+text-align: center;
+}
+.navbar {
+display: flex;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+position: absolute;
+margin-top: 2rem;
+padding: 0 8rem;
+flex-wrap: wrap;
+}
+}
+
+#image{
+    height: 110px;
+    width: 100px;
+}
+#img{
+    width: 60%;
+    height: 80%;
+    border-radius: 220px;
+}
+@media (max-width: 767px) {
+    #img{
+        width: 90%;
+        height: 90%;
+    }
+   
+}
+
+@media (min-width: 767px) {
+    #img {
+        border-radius: 500px;
+    }
+}
+
+.d-wrapper {
+flex-wrap: wrap;
+}
+.d-container h1 {
+text-align: center;
+}
+.d-container h3 {
+text-align: center;
+padding-top: 5%;
+}
+.d-container {
+padding: 5% 0%;
+flex-wrap: wrap;
+}
+.d-boxes {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin-top: .2rem;
+}
+.boxx{
+margin-top: 2%;
+}
+.d-box {
+display: flex;
+justify-content: space-between;
+background-color: rgba(255, 252, 252, 0.219);
+padding: 1rem;
+width: 75%;
+align-items: center;
+position: relative;
+}
+.d-box:hover {
+background-color: rgba(255, 252, 252, 0.308);
+transition: 0.5s;
+}
+.text {
+width: 97%;
+}
+.text p {
+margin-top: 3%;
+}
+.dropdownMenu {
+overflow: hidden;
+max-height: 0;
+visibility: collapse;
+max-height: 0;
+width: 75%;
+padding: 0 1.5rem;
+-webkit-transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+text-align: left;
+background-color: rgb(45, 45, 45);
+color: rgb(255, 255, 255);
+margin-top: 0.2%;
+}
+.dropdownMenu h3 {
+padding: 0%;
+text-align: left;
+}
+.faq.open .dropdownMenu{
+overflow: hidden;
+visibility: visible;
+max-height: 0px;
+padding: 0px 1.5rem;
+transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+text-align: left;
+background-color: rgb(45, 45, 45);
+color: rgb(255, 255, 255);
+max-height: 75rem;
+padding-bottom: 1.5rem;
+padding-top: 1.5rem;
+}
+.icon {
+font-size: 30px;
+}
+
+.email {
+text-align: center;
+display: flex;
+justify-content: center;
+gap: 0.5rem;
+margin-top: 2%;
+flex-wrap: wrap;
+}
+input:focus::placeholder {
+position: absolute;
+margin-top: -4%;
+font-size: 14px;
+transition: 0.2s;
+transition-delay: 10ms;
+visibility: visible;
+}
+input:focus-within {
+transition: 0.3s;
+}
+.d-emwrap {
+align-items: center;
+flex-direction: column;
+}
+.email input {
+background-color: transparent;
+background-color: rgba(255, 252, 252, 0.048);
+border: none;
+padding: 1rem 1rem;
+width: 27%;
+border-radius: 5px;
+color: white;
+font-size: large;
+border: 0.1px solid rgba(255, 255, 255, 0.459);
+}
+.email input:focus {
+border: 1px solid white;
+}
+.email button {
+padding: 0.8rem 1.5rem;
+color: white;
+background-color: red;
+border: none;
+border-radius: 5px;
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+.email button:hover {
+background-color: rgba(255, 0, 0, 0.705);
+}
+.email .icons {
+font-size: 20px;
+}
+a {
+color: rgba(255, 255, 255, 0.7);
+font-size: 15px;
+cursor: pointer;
+}
+.d-links {
+display: flex;
+padding: 0% 1% 15% 10%;
+}
+.question {
+margin-left: 10%;
+line-height: 80px;
+}
+.first-link {
+flex-direction: column;
+display: flex;
+row-gap: 12px;
+line-height: 1.3125rem;
+}
+.but {
+margin-top: -13%;
+margin-left: 10%;
+}
+.but button {
+padding: 10px 18px;
+background-color: black;
+color: white;
+border: 1px solid white;
+border-radius: 5px;
+}
+.but button .iconss {
+margin-left: 7px;
+}
+.but button .iconsss {
+margin-right: 7px;
+}
+.but h5 {
+color: rgba(255, 255, 255, 0.7);
+margin-top: 2%;
+}
+.second-link {
+flex-direction: column;
+display: flex;
+row-gap: 12px;
+margin-left: 20%;
+line-height: 1.3125rem;
+}
+.third-link {
+flex-direction: column;
+display: flex;
+row-gap: 12px;
+margin-left: 20%;
+line-height: 1.3125rem;
+}
+@media screen and (max-width: 425px) {
+.d-emwrap {
+padding: 10% 10% 10% 10%;
+}
+.email input {
+width: 90%;
+margin-top: 5%;
+}
+.email button{
+margin-top: 5%;
+}
+.dropdownMenu.open {
+padding: 6%;
+width: 90%;
+}
+.dropdownMenu {
+width: 85%;
+}
+.boxx{
+margin-top: 7%;
+}
+.d-box {
+width: 85%;
+padding: 1.5rem;
+}
+.d-links {
+flex-direction: column;
+padding: 0% 1% 50% 9%;
+}
+.second-link {
+margin-left: 1px;
+margin-top: 30px;
+}
+.third-link {
+margin-left: 1px;
+margin-top: 30px;
+}
+.but {
+margin-top: -40%;
+margin-left: 10%;
+}
+.but h5 {
+margin-top: 10%;
+}
+.question {
+margin-left: 9%;
+}
+.icon {
+font-size: 15px;
+}
+}
+@media (max-width: 1024px) and (min-width: 425px) {
+.d-box {
+width: 90%;
+}
+.icon {
+font-size: 15px;
+}
+.dropdownMenu.open {
+width: 90%;
+}
+.dropdownMenu {
+width: 90%;
+}
+.email input {
+width: 15%;
+}
+.d-emwrap {
+padding: 4% 5% 5% 5%;
+}
+.second-link {
+margin-left: 25px;
+width: 250px;
+}
+.first-link {
+margin-left: -5%;
+width: 250px;
+}
+.third-link {
+margin-left: 14%;
+width: 250px;
+}
+.question {
+margin-left: 5%;
+line-height: 40px;
+}
+.but {
+margin-top: -13%;
+margin-left: 5%;
+}
+.email input {
+width: 50%;
+}
+}
+@media (width: 425px) {
+.second-link {
+margin-left: -18px;
+margin-top: 30px;
+}
+.third-link {
+margin-left: 40%;
+margin-top: -40%;
+}
+.but {
+margin-top: -40%;
+margin-left: 5%;
+}
+.but h5 {
+margin-top: 10%;
+}
+.question {
+margin-left: 5%;
+}
+.email input {
+width: 90%;
+}
+.d-box{
+width:90%;
+}
+}
+
+hr {
+    background-color: rgba(255, 252, 252, 0.219);
+    padding: 0.3rem;
+    margin-top: 5%;
+    border: none;
+  }

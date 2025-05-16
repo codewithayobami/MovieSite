@@ -1,0 +1,45 @@
+<?php 
+session_start();
+$response = array();
+
+include 'db_connect.php';
+
+// Define the valid API key (set this to your chosen key)
+define('API_KEY', 'your-api-key-here');
+
+// Function to check if the API key matches the predefined key
+function checkApiKey($apiKey) {
+    return $apiKey === API_KEY;
+}
+
+// Retrieve API key from request header
+$headers = apache_request_headers();
+$apiKey = isset($headers['Authorization']) ? $headers['Authorization'] : null;
+
+// Allow all websites to access the API (CORS handling)
+header("Access-Control-Allow-Origin: *"); // This allows all websites
+header("Content-Type: application/json");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+
+if ($apiKey && checkApiKey($apiKey)) {
+    // Proceed if API key is valid
+    $sql_movie_api = "SELECT * FROM users";
+    $result = mysqli_query($conn, $sql_movie_api);
+
+    if ($result) {
+        $i = 0;
+        while ($row = mysqli_fetch_assoc($result)) {
+            $response[$i]['id'] = $row['id'];
+            $response[$i]['username'] = $row['username'];
+            $response[$i]['email'] = $row['email'];
+            $i++;
+        }
+        echo json_encode($response, JSON_PRETTY_PRINT);
+    }
+} else {
+    // Return an error if API key is missing or invalid
+    header("HTTP/1.1 403 Forbidden");
+    echo json_encode(array("message" => "Invalid or missing API key"));
+}
+?>

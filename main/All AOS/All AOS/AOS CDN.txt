@@ -1,0 +1,18 @@
+<!--This will be in the header-->
+<link rel="stylesheet" href="aos/aos.css">
+
+
+
+<mg src="xyz.jpg"  data-aos="fade-up" data-aos-delay="400">
+
+<!--This will be before the closing body tag-->
+<script src="aos/aos.js"></script>
+  <script>
+      AOS.init();
+</script>
+
+
+
+
+
+<!--data-aos="zoom-in"-->
